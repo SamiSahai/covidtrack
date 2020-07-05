@@ -40,6 +40,7 @@ jobs:
       
     - name: Installing Surge
       run: npm install -g surge
+      
     - name: Deploy to surge
       run: surge ./build covid-track-sufyan.surge.sh --token ${{ secrets.COVID }}
   
