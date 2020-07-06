@@ -2,6 +2,9 @@ import React from "react";
 import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import CountUp from "react-countup";
 import cx from "classnames";
+import image1 from "./images/covid.jpg";
+import image2 from "./images/rec.jpg";
+import image3 from "./images/dead.jpg";
 
 import styles from "./Cards.module.css";
 
@@ -21,6 +24,9 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           className={cx(styles.card, styles.infected)}
         >
           <CardContent>
+            <div>
+              <img className={styles.image1} src={image1} alt="COVID-19" />
+            </div>
             <Typography color="textSecondary" gutterBottom>
               Infected
             </Typography>
@@ -48,6 +54,9 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           className={cx(styles.card, styles.recovered)}
         >
           <CardContent>
+            <div>
+              <img className={styles.image2} src={image2} alt="COVID-19" />
+            </div>
             <Typography color="textSecondary" gutterBottom>
               Recovered
             </Typography>
@@ -75,6 +84,9 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           className={cx(styles.card, styles.deaths)}
         >
           <CardContent>
+            <div>
+              <img className={styles.image3} src={image3} alt="COVID-19" />
+            </div>
             <Typography color="textSecondary" gutterBottom>
               Deaths
             </Typography>

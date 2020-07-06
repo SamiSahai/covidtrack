@@ -8,13 +8,13 @@ import styles from "./AppBar.module.css";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    justifyContent: "center",
   },
   menuButton: {
     marginRight: theme.spacing(2),
   },
   title: {
     flexGrow: 1,
-    justifyContent: "center",
   },
 }));
 
@@ -25,7 +25,7 @@ export default function DenseAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar variant="dense">
-          <Typography variant="h6" color="inherit" text-align="center">
+          <Typography variant="h6" color="inherit">
             COVID Tracker By Sufyan
           </Typography>
         </Toolbar>
