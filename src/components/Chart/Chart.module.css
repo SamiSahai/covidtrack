@@ -2,6 +2,9 @@
   display: flex;
   justify-content: center;
   width: 65%;
+  border-radius: 8px;
+
+  background-image: url("https://www.festivalclaca.cat/imgfv/b/99-993716_vector-background-abstract-png-background-vector-blue-png.png");
 }
 
 @media only screen and (max-width: 770px) {

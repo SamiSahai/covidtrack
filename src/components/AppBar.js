@@ -3,12 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import styles from "./AppBar.module.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    justifyContent: "center",
+    textAlign: "center",
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -18,19 +17,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function DenseAppBar() {
+export default function ButtonAppBar() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar variant="dense">
-          <Typography variant="h6" color="inherit">
-            COVID Tracker By Sufyan
+      <AppBar position="absolute" color="primary" style={{}}>
+        <Toolbar>
+          <Typography variant="h4" className={classes.title}>
+            COVID tracker By Sufyan
           </Typography>
         </Toolbar>
       </AppBar>
-      <styles />
     </div>
   );
 }

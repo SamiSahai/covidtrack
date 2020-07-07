@@ -3,7 +3,7 @@ import React from "react";
 import { Cards, CountryPicker, Chart } from "./components";
 import { fetchData } from "./api/";
 import styles from "./App.module.css";
-import AppBar from "./components/AppBar.js";
+import AppBar from "./components/AppBar";
 import image from "./images/cvd.PNG";
 
 class App extends React.Component {
@@ -29,7 +29,9 @@ class App extends React.Component {
 
     return (
       <div className={styles.container}>
-        <AppBar />
+        <div>
+          <AppBar />
+        </div>
         <img className={styles.image} src={image} alt="COVID-19" />
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />

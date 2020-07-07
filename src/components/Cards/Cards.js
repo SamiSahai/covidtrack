@@ -3,7 +3,7 @@ import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import CountUp from "react-countup";
 import cx from "classnames";
 import image1 from "./images/covid.jpg";
-import image2 from "./images/rec.jpg";
+import image2 from "./images/recover.jpg";
 import image3 from "./images/dead.jpg";
 
 import styles from "./Cards.module.css";
